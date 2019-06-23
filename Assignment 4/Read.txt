@@ -1,0 +1,27 @@
+Team Assignment 4
+Topic: Inheritance and Constructors
+
+
+
+Due Date: Friday, July 20 7:00 PM (no late submissions accepted)
+
+
+
+Your first task is to ensure that the BankAccount and Customer classes from Assignment 3 are fully functional, as described by the specification for Assignment 3. Update BankAccount so that it has a constructor with the following signature:
+
+BankAccount(double initialBalance)
+
+Now, create a new class SavingsAccount, which is a subclass of BankAccount. In addition to the methods and data provided by the parent class, SavingsAccount should include:
+
+annualInterestRate – a variable of type double, which indicates an annual interest rate (as a percentage rather than a decimal), which is always positive.
+
+depositMonthlyInterest() – a method which, on a monthly basis, calculates the amount of interest earned on the balance in the SavingsAccount, and adds this to the balance.
+
+SavingsAccount should not contain any additional instance variables, although it may inherit them (as well as appropriate getters and setters) from a base class. You will lose marks if SavingsAccount defines the same instance variables as BankAccount.
+
+Create appropriate constructors, getters and setters for SavingsAccount. To determine what would be appropriate, ensure that your code can run the provided test cases, as well as the following snippet of code:
+
+SavingsAccount s = new SavingsAccount(1000, 1.5);
+s.deposit(1000);
+s.depositMonthlyInterest();
+System.out.println(s.getBalance());
