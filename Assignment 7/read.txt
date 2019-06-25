@@ -1,0 +1,23 @@
+Team Assignment 7
+Due Date: Tuesday, July 31 3:00 PM (no late submissions accepted)
+
+Continue with last week's team assignment and implement the following class hierarchy.
+
+Class diagram
+
+Additional details:
+
+BankAccount and the method getMonthlyFeesAndInterest() in BankAccount should be abstract with protected access.
+ChequingAccount should implement getMonthlyFeesAndInterest() such that it returns 0 if there a positive balance and 20% of the balance otherwise (which would be a negative amount).
+SavingsAccount should implement getMonthlyFeesAndInterest() such that a monthly fee of $5 is charged if the balance is below $1000 and the account holder is given 1/12 of the annualInterestRate.  (This method could return a positive or negative amount.)
+monthEndUpdate in BankAccount should update the account balance based on the amount returned by getMonthlyFeesAndInterest.  (The balance will decrease is getMonthlyFeesAndInterest returns a negative number and will be increased otherwise.)
+JUnit tests for the three classes are provided in the zip file you see below.
+
+In addition to the code, provide a trace of the following code:
+
+BankAccount b1 = new ChequingAccount(new Customer("John Doe", 1001), 100.0, 10.0);
+BankAccount b2 = new SavingsAccount(new Customer("Jane Doe", 2002), 500.0, 5.0);
+b1.monthEndUpdate();
+b2.monthEndUpdate();
+System.out.println(b1.getBalance() + "," + b2.getBalance());
+In your trace, indicate clearly which methods in which classes are called.  Also indicate the order in which they are called.
