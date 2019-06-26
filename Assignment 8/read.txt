@@ -1,0 +1,23 @@
+Team Assignment 8
+Topic: Static and final, immutable classes
+
+Due date: Friday, August 3rd 7:00 PM (No late submissions accepted)
+
+Requirements:
+
+To be able to work on this assignment, you will need a functional version of the BankAccount class, Customer class, SavingAccount class  from last week’s assignment. Your first task is to get this working.
+
+Updated requirements for SavingsAccount
+
+Update the SavingAccount class such that:
+
+Make annualInterestRate static
+Add a static setter method to set the annualInterestRate
+Update the constructor accordingly keeping in mind the static nature of annualInterestRate (Should we give annualInterestRate as argument each time we create an instance of SavingAccount?)
+SavingAccount class should pass the provided test cases.
+
+Updated requirements for Customer
+
+Update the Customer class such that it is immutable.  Keeping in mind the immutable nature of Customer class, answer the following:
+
+Q. Why don’t we need to worry about privacy leaks with respect to the accountHolder instance variable in BankAccount?
