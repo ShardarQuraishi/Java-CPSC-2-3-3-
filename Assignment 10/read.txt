@@ -1,0 +1,18 @@
+Team Assignment 10
+Due Date: Friday, August 10, 7:00 PM (No late submissions accepted)
+
+Submit the java file named Vowels.java with the static method named numOfVowels such that
+
+The method takes only a single parameter: a string
+The method returns an int -> the number of vowels in the parameter (ignoring 'y')
+There are no variables defined outside of a method.
+numOfVowels is recursive
+A JUnit test is provided below.  Make sure your code does not contain the words 'for' or 'while' anywhere: including inside documentation or as substrings.
+
+If the implementation is not recursive, your submission is not worth any mark: you will be assigned 0 marks for this assignment.
+
+In the in-line documentation in your code indicate
+
+The terminating condition and explain that the terminating conditions will always be reached eventually.
+The recursive call(s) and why this brings us closer to the terminating condition.
+How the result of the recursive call is used to compute the required solution. Explain why this computation is correct. You may assume that the recursive call gives a correct solution for the sub-problem.
