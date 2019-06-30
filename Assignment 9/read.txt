@@ -1,0 +1,17 @@
+Team Assignment 9
+Topic: File I/O and Exceptions
+
+Due Date: Tuesday, August 10, 7:00 PM (No late submissions accepted)
+
+Requirements:
+
+To be able to work on this assignment, you will need a functional version of all previous team assignments.  You’ll need BankAccount, ChequingAccount, SavingsAccount, Customer and the GUI class you’ve created.
+
+Below are the tasks for this assignment:
+
+When the application starts, it will get the account information from a text file.  If there is no file with account information, create a new account instead.  When creating a new account:
+Ask the user if they wish to create a savings account or a chequing account.
+Ask the user for the customer name.  Randomly generate a customer ID between 1000 and 9999.
+Update your graphical user interface to get this information from the user.
+When the application closes, the text file should have the updated account information.  (Which will be used when the BankApp is started again).  Make sure to write sufficient information to the text file such that you can recreate the BankAccount when the app is started again.
+Validate the amount to deposit/withdraw.  If the amount is not a number or it is not a valid number, give a descriptive error message (in the GUI).
